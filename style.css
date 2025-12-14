@@ -1,0 +1,411 @@
+/* GLOBAL STYLES */
+
+body {
+	font-family: "Space Grotesk", sans-serif;
+	color: #111111;
+	background-color: #ffffff;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.list-no-bullets {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+
+
+/* ----COLOURS---- */
+
+:root {
+	--green: #3F5F2B;
+	--green-dark: #2F4A20;
+	--border-green: #5C7A46;
+	--white: #ffffff;
+	--black: #111111;
+}
+
+
+
+/* ----TEXT STYLES---- */
+
+h1 {
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 78px;
+	line-height: 100%;
+	font-weight: 600;
+	font-style: italic;
+	letter-spacing: -1px;
+	color: var(--black);
+	margin: 0px;
+}
+
+h2 {
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 56px;
+	line-height: 110%;
+	font-weight: 600;
+	letter-spacing: -1px;
+	color: var(--black);
+	margin-top: 0px;
+	margin-bottom: 16px;
+}
+
+h3 {
+	font-size: 32px;
+	line-height: 120%;
+	font-weight: 700;
+	letter-spacing: -1px;
+	color: var(--black);
+	margin: 0px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 140%;
+	font-weight: 400;
+	color: var(--black);
+}
+
+
+
+/* ----NAVIGATION---- */
+
+header {
+	padding: 20px 4%;
+	background-color: var(--white);
+}
+
+.nav-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+}
+
+.logo {
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 110%;
+	color: var(--black);
+	text-decoration: none;
+}
+
+.logo em {
+	font-weight: 600;
+	font-style: italic;
+}
+
+.menu nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 22px;
+	padding-left: 0px;
+}
+
+.menu nav li {
+	list-style: none;
+}
+
+.nav-link {
+	color: var(--black);
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+}
+
+.top-rule {
+	border-top: 3px solid var(--border-green);
+	margin: 0px 4%;
+}
+
+
+
+/* ----BUTTONS---- */
+
+.button-green {
+	display: inline-block;
+	color: white;
+	padding: 14px 18px;
+	background-color: var(--green);
+	text-decoration: none;
+	font-weight: 700;
+	border: none;
+	border-radius: 999px;
+	text-align: center;
+	min-width: 220px;
+}
+
+.button-green:hover {
+	background-color: var(--green-dark);
+}
+
+
+
+/* ----PAGE SHARED---- */
+
+.page-title {
+	padding: 70px 0px 40px 0px;
+}
+
+.section-gap {
+	padding: 60px 0px;
+}
+
+.img-full {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.img-crop {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	overflow: hidden;
+	border-radius: 4px;
+	position: relative;
+}
+
+.img-crop img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+/* ----HOME PAGE---- */
+
+.home-hero-title {
+	margin-top: 100px;
+	font-style: italic;
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.home-hero-sub {
+	margin-top: 50px;
+	font-size: 18px;
+}
+
+.home-grid {
+	margin-top: 60px;
+}
+
+
+
+/* ----ABOUT PAGE---- */
+
+.about-text p {
+	max-width: 520px;
+}
+
+.about-cta {
+	margin-top: 30px;
+}
+
+
+
+/* ----POTTERY CLASSES PAGE---- */
+
+.price {
+	font-size: 44px;
+	font-weight: 700;
+	margin: 18px 0px 4px 0px;
+}
+
+.fineprint {
+	font-size: 12px;
+	margin: 0px 0px 18px 0px;
+	opacity: 0.9;
+}
+
+.class-card {
+	padding: 8px 0px;
+}
+
+
+
+/* ----CONTACT PAGE---- */
+
+.contact-left p {
+	margin-top: 8px;
+	margin-bottom: 18px;
+}
+
+.social-row {
+	display: flex;
+	gap: 14px;
+	margin-top: 18px;
+	align-items: center;
+}
+
+.social-row a img {
+	width: 22px;
+	height: 22px;
+	display: block;
+}
+
+.contact-form {
+	display: grid;
+	grid-template: 1fr / 1fr 1fr;
+	gap: 26px;
+	align-items: start;
+	margin-top: 18px;
+}
+
+.input-label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+.input-field {
+	width: 100%;
+	border: 1px solid #999999;
+	height: 36px;
+	padding: 6px 10px;
+	box-sizing: border-box;
+	font-family: inherit;
+}
+
+.text-area {
+	width: 100%;
+	height: 240px;
+}
+
+.span-2 {
+	grid-column: 1 / span 2;
+}
+
+.map-wrap {
+	margin-top: 30px;
+}
+
+.map-frame {
+	width: 100%;
+	height: auto;
+	border: 0px;
+	overflow: hidden;
+	border-radius: 4px;
+	position: relative;
+}
+
+
+
+/* ----FOOTER---- */
+
+.footer-rule {
+	border-top: 3px solid var(--border-green);
+	margin: 40px 4% 0px 4%;
+}
+
+footer {
+	background-color: var(--green);
+	color: white;
+	padding: 26px 4%;
+	margin-top: 0px;
+}
+
+.footer-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
+.footer-links {
+	display: flex;
+	gap: 22px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.footer-links a {
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.footer-links a:hover {
+	text-decoration: underline;
+}
+
+.footer-brand {
+	font-style: italic;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.footer-meta {
+	width: 100%;
+	text-align: center;
+	margin-top: 16px;
+	font-size: 12px;
+	opacity: 0.9;
+}
+
+.footer-social {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.footer-social img {
+	width: 22px;
+	height: 22px;
+	display: block;
+}
+
+
+
+/* MOBILE BREAKPOINT */
+
+@media screen and (max-width: 478px) {
+
+	h1 {
+		font-size: 56px;
+	}
+
+	h2 {
+		font-size: 44px;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.contact-form {
+		grid-template: 1fr / 1fr;
+	}
+
+	.span-2 {
+		grid-column: auto;
+	}
+
+	.button-green {
+		min-width: 100%;
+	}
+
+}
